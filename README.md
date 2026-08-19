@@ -58,6 +58,17 @@ The external stylesheet demonstrates:
 - Media queries
 - Responsive layouts
 
+## Running the Project Locally
+
+1. Clone the repository:
+   `git clone https://github.com/JoelSebastianJijo/<repo-name>.git`
+2. Open the project folder.
+3. Open `index.html` directly in a web browser, or serve it locally
+   (for example, using the VS Code "Live Server" extension) and
+   navigate to `index.html`.
+4. No build steps or dependencies are required for Phase 1 — it is a
+   static HTML/CSS site.
+
 ## Deployment
 
 The website is deployed using GitHub Pages.
