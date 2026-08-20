@@ -53,19 +53,30 @@
 <article>
     <h2>Gallery</h2>
 
+    <p>Click a thumbnail below to view details.</p>
+
+    <div class="gallery-display" id="gallery-display">
+        <img id="gallery-display-img" src="images/activity-1.jpg" alt="Selected activity photo">
+        <h3 id="gallery-display-title">Academic Activity</h3>
+        <p id="gallery-display-desc">
+            Coursework, lab sessions and classroom activities as part of
+            the B.Tech in Artificial Intelligence & Data Science programme.
+        </p>
+    </div>
+
     <div class="gallery">
 
-        <div class="gallery-item">
+        <div class="gallery-item gallery-thumb" data-index="0">
             <img src="images/activity-1.jpg" alt="Academic activity photo">
             <p>Academic Activity</p>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item gallery-thumb" data-index="1">
             <img src="images/activity-2.jpg" alt="Project work photo">
             <p>Project Work</p>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item gallery-thumb" data-index="2">
             <img src="images/activity-3.jpg" alt="Workshop or event photo">
             <p>Workshop / Event</p>
         </div>
@@ -100,6 +111,9 @@
 <footer class="site-footer">
     <p>&copy; 2026 Joel Sebastian Jijo.</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/gallery.js"></script>
 
 </body>
 </html>

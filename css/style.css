@@ -172,21 +172,14 @@ img {
     border: 1px solid #cccccc;
 }
 
-.profile-placeholder {
+.profile-photo {
     width: 120px;
     height: 120px;
     margin: 0 auto 15px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     border-radius: 50%;
-    background: #3f4b5c;
-    color: white;
-
-    font-size: 2rem;
-    font-weight: bold;
+    object-fit: cover;
+    border: 2px solid #3f4b5c;
 }
 
 .hero-card h2 {
@@ -391,15 +384,11 @@ tr:nth-child(even) {
     border: 1px solid #cccccc;
 }
 
-.gallery-placeholder {
+.gallery-item img {
+    width: 100%;
     height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e7e9ec;
-    color: #3f4b5c;
-    font-size: 1.5rem;
-    font-weight: bold;
+    object-fit: cover;
+    margin-bottom: 8px;
 }
 
 
@@ -488,6 +477,142 @@ iframe {
 
 .site-footer p {
     margin: 4px;
+}
+
+
+/* ==============================
+   Greeting (Phase 2)
+================================= */
+
+.greeting {
+    color: #3f4b5c;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   Gallery Display (Phase 2)
+================================= */
+
+.gallery-display {
+    background: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gallery-display img {
+    max-width: 260px;
+    margin: 0 auto 15px;
+}
+
+.gallery-thumb {
+    cursor: pointer;
+}
+
+.gallery-thumb-active {
+    border: 2px solid #3f4b5c;
+}
+
+
+/* ==============================
+   Articles List (Phase 2)
+================================= */
+
+.section-note {
+    color: #555555;
+    font-size: 0.9rem;
+    max-width: 600px;
+    margin: 8px auto 0;
+}
+
+.articles-list {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.articles-list li {
+    background: white;
+    border: 1px solid #cccccc;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+.articles-list a {
+    font-weight: bold;
+}
+
+.article-author {
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+
+/* ==============================
+   Weather Widget (Phase 2)
+================================= */
+
+.weather-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.weather-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-form input {
+    flex: 1;
+    min-width: 140px;
+}
+
+.weather-result {
+    margin-top: 20px;
+}
+
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    background: white;
+    border: 1px solid #cccccc;
+    padding: 15px 20px;
+}
+
+.weather-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-error {
+    color: #b00020;
+}
+
+
+/* ==============================
+   Form Validation (Phase 2)
+================================= */
+
+.form-error {
+    display: block;
+    color: #b00020;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.form-success {
+    color: #1e7e34;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 

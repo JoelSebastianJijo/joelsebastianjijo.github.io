@@ -42,6 +42,8 @@
         <div class="hero-content">
             <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
+            <p id="greeting" class="greeting"></p>
+
             <h1>Hi, I'm <span>Joel Sebastian Jijo</span></h1>
 
             <p>
@@ -100,12 +102,59 @@
         </div>
     </section>
 
+
+    <section class="section" id="articles">
+        <div class="section-heading">
+            <p class="eyebrow">FROM DEV.TO</p>
+            <h2>My Articles</h2>
+            <p class="section-note">
+                A live technology feed pulled from the DEV Community API
+                (used here as a demonstration, since I don't publish my own
+                articles yet).
+            </p>
+        </div>
+
+        <ul id="articles-list" class="articles-list">
+            <li>Loading articles…</li>
+        </ul>
+    </section>
+
+
+    <section class="section" id="weather">
+        <div class="section-heading">
+            <p class="eyebrow">TRY IT OUT</p>
+            <h2>Live Weather</h2>
+            <p class="section-note">
+                Enter your own free OpenWeatherMap API key to use this
+                widget. The key is only stored in your browser (not sent
+                anywhere except to OpenWeatherMap) and is never included
+                in the site's source code.
+            </p>
+        </div>
+
+        <div class="weather-box">
+
+            <div class="weather-form">
+                <input type="text" id="api-key-input" placeholder="OpenWeatherMap API key">
+                <input type="text" id="city-input" placeholder="Enter a city name">
+                <button type="button" id="weather-btn" class="btn">Get Weather</button>
+            </div>
+
+            <div id="weather-result" class="weather-result"></div>
+
+        </div>
+    </section>
+
 </main>
 
 <footer class="site-footer">
     <p>&copy; 2026 Joel Sebastian Jijo. All rights reserved.</p>
-    <p>Personal Portfolio — Phase 1</p>
+    <p>Personal Portfolio — Phase 2</p>
 </footer>
+
+<script src="js/greeting.js"></script>
+<script src="js/articles.js"></script>
+<script src="js/weather.js"></script>
 
 </body>
 </html>
